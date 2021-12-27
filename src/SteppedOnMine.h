@@ -4,8 +4,6 @@
 
 #pragma once
 
-#include <exception>
-
 #include "GameOver.h"
 
 class SteppedOnMine: public GameOver {

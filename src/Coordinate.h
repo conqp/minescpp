@@ -6,8 +6,7 @@
 
 #include <vector>
 
-class Coordinate {
-public:
+struct Coordinate {
     short x;
     short y;
     Coordinate(short x, short y);

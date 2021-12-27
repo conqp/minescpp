@@ -14,7 +14,7 @@ GameOver::GameOver(string  message, unsigned short returnCode)
 {
 }
 
-char const *GameOver::what() const noexcept
+char const * GameOver::what() const noexcept
 {
     return message.c_str();
 }

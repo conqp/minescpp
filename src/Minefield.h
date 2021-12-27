@@ -24,15 +24,15 @@ public:
     [[nodiscard]] bool sweepCompleted() const;
     [[nodiscard]] bool isOnField(Coordinate const & position) const;
     [[nodiscard]] Cell const & cellAt(Coordinate const & position) const;
-    Cell & cellAt(Coordinate const & position);
     [[nodiscard]] std::vector<std::reference_wrapper<Cell const>> getNeighbors(Coordinate const & position) const;
     [[nodiscard]] unsigned short countSurroundingMines(Coordinate const & position) const;
+    [[nodiscard]] std::string toString(bool gameOver) const;
+    Cell & cellAt(Coordinate const & position);
     void setNoMineAt(Coordinate const & position);
     void populate(unsigned short mines);
     void initialize(Coordinate const & start, unsigned short mines);
     void toggleMarked(Coordinate const & position);
     void visit(Coordinate const & position);
-    [[nodiscard]] std::string toString(bool gameOver) const;
 };
 
 

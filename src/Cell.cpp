@@ -4,6 +4,8 @@
 
 #include <optional>
 using std::nullopt;
+#include <string>
+using std::string;
 
 #include "Cell.h"
 
@@ -12,7 +14,7 @@ Cell::Cell()
 {
 }
 
-std::string Cell::toString(bool gameOver) const
+string Cell::toString(bool gameOver) const
 {
     if (visited)
         return *hasMine ? "*" : " ";

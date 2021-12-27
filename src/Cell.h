@@ -6,8 +6,7 @@
 #include <optional>
 #include <string>
 
-class Cell {
-public:
+struct Cell {
     std::optional<bool> hasMine;
     bool marked;
     bool visited;

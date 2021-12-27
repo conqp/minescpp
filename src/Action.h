@@ -8,8 +8,7 @@
 
 #include "Coordinate.h"
 
-class Action {
-public:
+struct Action {
     std::string action;
     Coordinate position;
     Action(std::string action, Coordinate const & position);

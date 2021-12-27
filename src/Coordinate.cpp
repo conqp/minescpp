@@ -12,7 +12,7 @@ Coordinate::Coordinate(short x, short y)
 {
 }
 
-std::vector<Coordinate> Coordinate::getNeighbors() const
+vector<Coordinate> Coordinate::getNeighbors() const
 {
     vector<Coordinate> neighbors;
 
